@@ -15,7 +15,7 @@
     color: var(--mainCol);
 }
 
-.row.tm-section.tm-card:after {
+.col-sm-12.col-md-12.col-lg-6.col-xl-6:nth-child(2n)::after {
     content: '';
     width: 0;
     height: 0;
