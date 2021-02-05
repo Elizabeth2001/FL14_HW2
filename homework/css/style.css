@@ -1,0 +1,28 @@
+:root {
+    --mainCol : #76cdd8;
+}
+
+.row.tm-section.tm-card.tm-col-md-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.tm-flex-center.p-5.tm-bg-color-primary {
+    background-color: #76cdd8;
+}
+
+.tm-text-color-primary, .tm-quote {
+    color: var(--mainCol);
+}
+
+.row.tm-section.tm-card:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 30px 30px 0;
+    border-color: transparent #608A32 transparent transparent;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
