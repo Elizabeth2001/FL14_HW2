@@ -88,3 +88,8 @@ section:hover .col-sm-12.col-md-12.col-lg-6.col-xl-6:nth-child(2)::after {
 .tm-pricing-body:hover .tm-pricing-discount {
     display:block;
 }
+
+.row.tm-container-inner.tm-contact-form:focus {
+    border-color: #24d4d4;
+    box-shadow: 0 0 0 0.2rem #24d4d4;
+}
