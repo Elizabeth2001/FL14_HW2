@@ -46,21 +46,6 @@ section:hover .col-sm-12.col-md-12.col-lg-6.col-xl-6:nth-child(2)::after {
     transform: scale(1.1);
 }
 
-/* .tm-flex-center:hover {
-    box-shadow: 0 0 0 0.2rem #24d4d4;
-} */
-/* For block: box-shadow: 0 0 0 0.2rem #24d4d4,
-for Button: background: #24d4d4;) */
-/* .tm-bg-color-secondary.tm-text-color-white.text-center.tm-font-thin.tm-pricing-header:hover {
-    transform: scale(1.1);
-} */
-    
-
-
-/* Тень при наведении на секцию!!! Исправить! */
-/* .container:hover section {
-    box-shadow: 0 0 0 70px grey;
-} */
 
 /* Сделать треугольник слева для 1 эл-та!!!! Исправить!
 .col-sm-12.col-md-12.col-lg-6.col-xl-6.tm-col-md-reverse:nth-child(2n+1)::after {
@@ -75,13 +60,22 @@ for Button: background: #24d4d4;) */
     position: absolute;
 } */
 
-.btn:hover {
+.btn-primary:hover {
     background:rgb(118, 205, 216);
 }
 
-.col-sm-12.col-md-6.col-lg-4.col-xl-4.pl-lg-4.pr-xl-0.mb-4.mb-lg-0:hover {
+.tm-pricing-table:hover {
     box-shadow: 0 0 0 0.2rem #24d4d4;
 }
+
+.tm-pricing-table:hover .btn-secondary{
+    background: #24d4d4;
+}
+
+
+/* .col-sm-12.col-md-6.col-lg-4.col-xl-4.pl-lg-4.pr-xl-0.mb-4.mb-lg-0:hover {
+    box-shadow: 0 0 0 0.2rem #24d4d4;
+} */
 
 .tm-pricing-body:hover {
     box-shadow: 0 0 0 0.2rem #24d4d4
@@ -91,6 +85,6 @@ for Button: background: #24d4d4;) */
     background: #24d4d4;
 }
 
-.btn.btn-secondary .tm-pricing-discount:hover {
-    display: block;
+.tm-pricing-body:hover .tm-pricing-discount {
+    display:block;
 }
