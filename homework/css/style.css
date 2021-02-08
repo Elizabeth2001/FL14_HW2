@@ -1,5 +1,16 @@
 :root {
     --mainCol : #76cdd8;
+    --secCol: #019999;
+}
+
+.col-lg-12.tm-bg-color-secondary.tm-text-color-white.tm-font-thin.tm-form-footer,
+.btn,
+.tm-bg-color-secondary.tm-text-color-white.text-center.tm-font-thin.tm-pricing-header {
+    background-color: var(--secCol);
+}
+
+.tm-pricing-table, .btn {
+    border: 1px solid var(--secCol);
 }
 
 .row.tm-section.tm-card.tm-col-md-reverse {
@@ -7,15 +18,19 @@
     flex-direction: row-reverse;
 }
 
-.tm-flex-center.p-5.tm-bg-color-primary {
+.tm-flex-center.p-5.tm-bg-color-primary, .col-lg-12.tm-form-header.pl-5.pr-5 {
     background-color: #76cdd8;
 }
 
-.tm-text-color-primary, .tm-quote {
+.tm-text-color-primary {
     color: var(--mainCol);
 }
 
-.col-sm-12.col-md-12.col-lg-6.col-xl-6:nth-child(2)::after {
+section:hover {
+    color: var(--mainCol);
+}
+
+section:hover .col-sm-12.col-md-12.col-lg-6.col-xl-6:nth-child(2)::after {
     content: '';
     width: 0;
     height: 0;
@@ -27,11 +42,28 @@
     position: absolute;
 }
 
-.container:hover section {
-    box-shadow: 0 0 0 70px #53ea93;
+.img-fluid:hover {
+    transform: scale(1.1);
 }
 
-/* .col-sm-12.col-md-12.col-lg-6.col-xl-6.tm-col-md-reverse:nth-child(2n+1)::after {
+/* .tm-flex-center:hover {
+    box-shadow: 0 0 0 0.2rem #24d4d4;
+} */
+/* For block: box-shadow: 0 0 0 0.2rem #24d4d4,
+for Button: background: #24d4d4;) */
+/* .tm-bg-color-secondary.tm-text-color-white.text-center.tm-font-thin.tm-pricing-header:hover {
+    transform: scale(1.1);
+} */
+    
+
+
+/* Тень при наведении на секцию!!! Исправить! */
+/* .container:hover section {
+    box-shadow: 0 0 0 70px grey;
+} */
+
+/* Сделать треугольник слева для 1 эл-та!!!! Исправить!
+.col-sm-12.col-md-12.col-lg-6.col-xl-6.tm-col-md-reverse:nth-child(2n+1)::after {
     content: '';
     width: 0;
     height: 0;
@@ -43,3 +75,22 @@
     position: absolute;
 } */
 
+.btn:hover {
+    background:rgb(118, 205, 216);
+}
+
+.col-sm-12.col-md-6.col-lg-4.col-xl-4.pl-lg-4.pr-xl-0.mb-4.mb-lg-0:hover {
+    box-shadow: 0 0 0 0.2rem #24d4d4;
+}
+
+.tm-pricing-body:hover {
+    box-shadow: 0 0 0 0.2rem #24d4d4
+}
+
+.tm-pricing-body:hover .btn{
+    background: #24d4d4;
+}
+
+.btn.btn-secondary .tm-pricing-discount:hover {
+    display: block;
+}
